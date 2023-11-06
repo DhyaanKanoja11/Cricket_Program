@@ -54,3 +54,5 @@ Average Score: 63.00
 ```
 
 Feel free to use this script to keep track of cricket scores and identify the top-performing and lowest-performing cricketers.
+## LICENSE
+[LICENSE]("https://github.com/DhyaanKanoja11/Cricket_Program/blob/main/LICENSE")
