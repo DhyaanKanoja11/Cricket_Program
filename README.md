@@ -1,62 +1,56 @@
-# Cricket Score Analyzer
+Cricket Scoreboard
+This simple Python script allows you to input the names and scores of a group of cricketers and provides you with some basic statistics, including the Man of the Match, the worst batsman, and the average score.
 
-Explore this interactive Python script that lets you input and analyze cricket scores, revealing the player with the highest score.
+Usage
+Input the number of cricketers: You will be prompted to enter the number of cricketers you want to input data for.
 
-## How to Use
+Enter cricketer names and scores: For each cricketer, you will be asked to enter their name and score.
 
-1. **Enter Cricketer Count:** Begin by specifying the number of cricketers you want to analyze.
-2. **Add Names:** Create an empty list 'a' to hold cricketer names.
-3. **Record Scores:** Make use of an empty list 's' to store their scores.
-4. **Gather Data:** Go through a loop for each cricketer:
-   - Provide their name and their corresponding score.
-   - Watch as their details are added to the lists.
+View the cricket statistics: After inputting all the data, the script will display the following statistics:
 
+Man of the Match: The cricketer with the highest score.
+Worst Batsman: The cricketer with the lowest score.
+Average Score: The average score of all the cricketers.
+How to Run
+Make sure you have Python installed on your system.
 
- Specify the number of cricketers
-n = int(input("Enter number of elements: "))
+Save the script to a file with a `.py` extension, for example, cricket_scoreboard.py.
 
- List to store cricketer names
-a = []
+Open your command-line interface or terminal.
 
- List to store scores
-s = []
+Navigate to the directory where you saved the script.
 
- Gather input
-for i in range(n):
-    x = str(input("ENTER NAME:"))
-    h = int(input("ENTER SCORES"))
-    a.append(x)
-    s.append(h)
+Run the script by executing the following command:
+```python
+python cricket_scoreboard.py
+```
+Follow the on-screen prompts to input cricketer names and scores.
 
+The script will display the cricket statistics after you've input all the data.
 
-Discover the Star: Set the stage by initializing a variable 'm' with the first score, then loop through the scores to spot the highest.
+Example
+Here's an example of how to use the script:
+```yaml
+Enter the number of cricketers: 4
+Enter the name of cricketer 1: Virat Kohli
+Enter the score for Virat Kohli: 72
+Enter the name of cricketer 2: Rohit Sharma
+Enter the score for Rohit Sharma: 103
+Enter the name of cricketer 3: Shikhar Dhawan
+Enter the score for Shikhar Dhawan: 45
+Enter the name of cricketer 4: KL Rahul
+Enter the score for KL Rahul: 32
 
-m = s[0]
+Cricket Scoreboard
+--------------------
+Virat Kohli         : 72
+Rohit Sharma        : 103
+Shikhar Dhawan      : 45
+KL Rahul            : 32
+--------------------
+Man of the Match: Rohit Sharma (SCORE: 103)
+Worst Batsman: KL Rahul (SCORE: 32)
+Average Score: 63.00
+```
 
-# Compare and find the highest
-for z in range(n):
-    if s[z] > m:
-        m = s[z]
-        pos = z
-
-Champion's Reveal: Finally, the curtain rises, and you get to see the cricketer with the highest score.
-
-print("Name Of The Batsman With The Highest Score:", a[pos], ", SCORE:", s[pos])
-
-######Ready to Play?######
-Prerequisites: Ensure you have Python installed on your system.
-
-Unfold the Script: Copy the provided code into a .py file.
-
-Start the Action: Run the file using a Python interpreter.
-
-Input Your Data: Follow along with the prompts to add cricketer names and their scores.
-
-Celebrate the Winner: The script will reveal the cricketer who clinched the highest score.
-
-
-
-#Python #CodingAdventures #CricketFever #ProgrammingBeginner #ExploreTech
-
-
-This README is your friendly guide to the cricket score analyzer script. With clear steps, relatable explanations, and approachable language, it makes diving into coding as enjoyable as a game of cricket. Feel free to engage and join the coding adventure!
+Feel free to use this script to keep track of cricket scores and identify the top-performing and lowest-performing cricketers.
