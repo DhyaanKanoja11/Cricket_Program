@@ -1,28 +1,36 @@
-#Input of Range 
-n = int (input ("Enter number of elements: "))
+# Input the number of cricketers and their scores
+n = int(input("Enter the number of cricketers: "))
 
-#cricketer Name
-a = []
+# Lists to store cricketer names and scores
+cricketer_names = []
+scores = []
 
-#scores
-s = []
+# Input cricketer names and scores
+for i in range(n):
+    name = input(f"Enter the name of cricketer {i + 1}: ")
+    score = int(input(f"Enter the score for {name}: "))
+    cricketer_names.append(name)
+    scores.append(score)
 
-#Input for list
-for i in range (n):
-    x = str(input("ENTER NAME:"))
-    h = int(input("ENTER SCORES"))
-    a.append(x)
-    s.append(h)
+# Find the cricketer with the highest score (Man of the Match)
+max_score = max(scores)
+index_of_max_score = scores.index(max_score)
+man_of_the_match = cricketer_names[index_of_max_score]
 
-m=s[0]
+# Find the cricketer with the lowest score
+min_score = min(scores)
+index_of_min_score = scores.index(min_score)
+worst_cricketer_name = cricketer_names[index_of_min_score]
 
-#comparing 
-for z in range(n):
-    if s[z]>m:
-        m=s[z]
-        pos=z
+# Calculate the average score
+average_score = sum(scores) / n
 
-print("Name Of The Batsman With The Highest Score:",a[pos],",SCORE:", s[pos])
-    
-
-    
+# Output the cricket statistics
+print("\nCricket Scoreboard")
+print("--------------------")
+for i in range(n):
+    print(f"{cricketer_names[i]:<20} : {scores[i]}")
+print("--------------------")
+print(f"Man of the Match: {man_of_the_match} (SCORE: {max_score})")
+print(f"Worst Batsman: {worst_cricketer_name} (SCORE: {min_score})")
+print(f"Average Score: {average_score:.2f}")
