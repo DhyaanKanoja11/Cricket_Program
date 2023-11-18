@@ -6,7 +6,7 @@ Explore this interactive Python script that lets you input and analyze cricket s
 
 1. **Enter Cricketer Count:** Begin by specifying the number of cricketers you want to analyze.
 2. **Add Names:** Create an empty list 'a' to hold cricketer names.
-3. **Record Scores:** Make use of an empty list 's' to store their scores.
+3. **Record Scores:** Make use of an empty list to store their scores.
 4. **Gather Data:** Go through a loop for each cricketer:
    - Provide their name and their corresponding score.
    - Watch as their details are added to the lists.
@@ -43,7 +43,7 @@ Champion's Reveal: Finally, the curtain rises, and you get to see the cricketer 
 
 print("Name Of The Batsman With The Highest Score:", a[pos], ", SCORE:", s[pos])
 
-######Ready to Play?######
+###### Ready to Play? ######
 Prerequisites: Ensure you have Python installed on your system.
 
 Unfold the Script: Copy the provided code into a .py file.
